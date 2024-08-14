@@ -31,7 +31,7 @@
     src="https://gradio.s3-us-west-2.amazonaws.com/3.39.0/gradio.js"
   ></script>
 
-  <style>
+  <!-- <style>
     @media screen and (max-width: 768px) {
       gradio-app {
         width: 100% !important;
@@ -39,7 +39,19 @@
       }
     }
   </style>
+   -->
+   <style>
+    .gradio-container {
+      width: 100%; /* Make sure the container takes the full width */
+      overflow-x: auto; /* Enable horizontal scrolling */
+      white-space: nowrap; /* Prevent line breaks in child elements */
+    }
   
+    .gradio-container gradio-app {
+      display: inline-block; /* Make sure the embedded app fits within the container */
+      min-width: 800px; /* Set a minimum width for the app, adjust as needed */
+    }
+  </style>
 <nav class="navbar" role="navigation" aria-label="main navigation">
   <div class="navbar-brand">
     <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
@@ -261,7 +273,7 @@
   </section> -->
 
 
-  <section class="hero teaser" style="background-color:#6b4f5d1a">
+  <!-- <section class="hero teaser" style="background-color:#6b4f5d1a">
     <div class="container is-max-desktop is-mobile">
       <div class="hero-body has-text-centered">
         <br>
@@ -269,8 +281,19 @@
         <gradio-app src="https://blessing-asphalt-pavement-distresses-detector.hf.space"></gradio-app>
       </div>
     </div>
+</section> -->
+
+<section class="hero teaser" style="background-color:#6b4f5d1a">
+  <div class="container is-max-desktop is-mobile">
+    <div class="hero-body has-text-centered">
+      <br>
+      <h3 class="title is-4">Inference Demo for our Model</h3>
+      <div class="gradio-container">
+        <gradio-app src="https://blessing-asphalt-pavement-distresses-detector.hf.space"></gradio-app>
+      </div>
+    </div>
+  </div>
 </section>
-  
 
 <!-- <section class="hero teaser">
   <div class="container is-max-desktop">
