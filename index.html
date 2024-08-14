@@ -25,7 +25,11 @@
   <script src="./static/js/bulma-carousel.min.js"></script>
   <script src="./static/js/bulma-slider.min.js"></script>
   <script src="./static/js/index.js"></script>
-
+  <!-- Gradio -->
+  <script
+    type="module"
+    src="https://gradio.s3-us-west-2.amazonaws.com/3.39.0/gradio.js"
+  ></script>
 </head>
 <body>
 
@@ -237,43 +241,18 @@
 
   <!-- style="background-color:#b1be3f4b" -->
 
-  <!-- <section class="hero teaser" style="background-color:#4547331f">
+  <section class="hero teaser" style="background-color:#6b4f5d1a">
     <div class="container is-max-desktop">
       <div class="hero-body has-text-centered">
         <br>
-        <h2 class="title is-4">Inference Demo for our Model</h2>
-        <iframe
-        src="https://blessing-asphalt-pavement-distresses-detector.hf.space"
-        frameborder="0"
-        width="1000"
-        height="800"
-        ></iframe>
+        <h3 class="title is-4">Inference Demo for our Model</h3>
+        <gradio-app src="https://blessing-asphalt-pavement-distresses-detector.hf.space"></gradio-app>
       </div>
 
     </div>
-  </section> -->
+  </section>
 
-  <section class="section" style="background-color:#b7ce8f23">
-    <div class="container is-max-desktop">
-      <!-- Abstract. -->
-      <div class="columns is-centered has-text-centered">
-        <div class="column is-one-fifths">
-          <h4 class="title is-3">Inference Demo for our Model</h4>
-          <br>
-          <div class="content has-text-justified">
-            <p>
-              <iframe
-              src="https://blessing-asphalt-pavement-distresses-detector.hf.space"
-              frameborder="0"
-              width="1000"
-              height="800"
-              ></iframe>
-            </p>
-          </div>
-        </div>
-      </div>
-      <!--/ Abstract. -->
-    </section>
+
 
   
   
