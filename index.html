@@ -30,9 +30,16 @@
     type="module"
     src="https://gradio.s3-us-west-2.amazonaws.com/3.39.0/gradio.js"
   ></script>
-</head>
-<body>
 
+  <style>
+    @media screen and (max-width: 768px) {
+      gradio-app {
+        width: 100% !important;
+        height: auto !important;
+      }
+    }
+  </style>
+  
 <nav class="navbar" role="navigation" aria-label="main navigation">
   <div class="navbar-brand">
     <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
@@ -233,6 +240,7 @@
           </p>
         </div>
       </div>
+
     </div>
     <!--/ Abstract. -->
   </section>
@@ -241,7 +249,7 @@
 
   <!-- style="background-color:#b1be3f4b" -->
 
-  <section class="hero teaser" style="background-color:#6b4f5d1a">
+  <!-- <section class="hero teaser" style="background-color:#6b4f5d1a">
     <div class="container is-max-desktop">
       <div class="hero-body has-text-centered">
         <br>
@@ -250,11 +258,18 @@
       </div>
 
     </div>
-  </section>
+  </section> -->
 
 
-
-  
+  <section class="hero teaser" style="background-color:#6b4f5d1a">
+    <div class="container is-max-desktop is-mobile">
+      <div class="hero-body has-text-centered">
+        <br>
+        <h3 class="title is-4">Inference Demo for our Model</h3>
+        <gradio-app src="https://blessing-asphalt-pavement-distresses-detector.hf.space"></gradio-app>
+      </div>
+    </div>
+</section>
   
 
 <!-- <section class="hero teaser">
