@@ -295,6 +295,110 @@
   </div>
 </section>
 
+
+
+<section class="hero teaser"  style="background-color:#36473a07">
+  <div class="container is-max-desktop">
+    <div class="hero-body has-text-centered">
+      <br>
+      <h2 class="title is-4">Modified YOLOv5 architecture</h2>
+      <figure>
+        <img src="./static/images/modified-yolov5.png">
+        <figcaption>
+          <em>
+            <strong>Overall YOLOv5 architecture with modified Cross-Stage Partial Network (C3 Block).</strong> The dotted red rectangular boxes show the areas where the architecture was modified.
+          </em>
+        </figcaption>
+      </figure>
+      
+    </div>
+
+  </div>
+</section>
+
+
+<section class="hero teaser"  style="background-color:#36473a07">
+  <div class="container is-max-desktop">
+    <div class="hero-body has-text-centered">
+      <br>
+      <h2 class="title is-4">Modified YOLOv5 architecture</h2>
+      <figure>
+        <img src="./static/images/modified-C3-block.png">
+        <figcaption>
+          <em>
+            <strong>Modified C3 block.</strong> We replace the first convolutional layer in the C3 block with a Convolutional Block Attention Module (CBAM). The CBAM output passes through the Bottleneck layers and concatenates with two additional convolutional layers' output 
+          </em>
+        </figcaption>
+      </figure>
+      
+    </div>
+
+  </div>
+</section>
+
+<section class="hero teaser"  style="background-color:#36473a07">
+  <div class="container is-max-desktop">
+    <div class="hero-body has-text-centered">
+      <br>
+      <h2 class="title is-4">Modified YOLOv5 architecture</h2>
+      <figure>
+        <img src="./static/images/cbam-architecture.png">
+        <figcaption>
+          <em>
+            <strong>CBAM architecture showing the Channel and Spatial Attention Module</strong>
+          </em>
+        </figcaption>
+      </figure>
+      
+    </div>
+
+  </div>
+</section>
+
+
+<section class="hero is-light is-small">
+  <div class="hero-body">
+    <div class="container has-text-centered">
+      <h2 class="title is-4">Model Predictions with Attention maps</h2>
+      <div id="results-carousel" class="carousel results-carousel">
+        <div class="item item-image1">
+          <img src="./static/images/attention-maps/attention-map-1.png" alt="Description of image 1">
+        </div>
+        <div class="item item-image2">
+          <img src="./static/images/attention-maps/attention-map-2.png" alt="Description of image 2">
+        </div>
+        <div class="item item-image3">
+          <img src="./static/images/attention-maps/attention-map-3.png" alt="Description of image 3">
+        </div>
+        <div class="item item-image4">
+          <img src="./static/images/attention-maps/attention-map-4.png" alt="Description of image 4">
+        </div>
+        <div class="item item-image5">
+          <img src="./static/images/attention-maps/attention-map-5.png" alt="Description of image 5">
+        </div>
+        <div class="item item-image6">
+          <img src="./static/images/attention-maps/attention-map-6.png" alt="Description of image 6">
+        </div>
+        <div class="item item-image7">
+          <img src="./static/images/attention-maps/attention-map-7.png" alt="Description of image 7">
+        </div>
+        <div class="item item-image8">
+          <img src="./static/images/attention-maps/attention-map-8.png" alt="Description of image 8">
+        </div>
+        <div class="item item-image9">
+          <img src="./static/images/attention-maps/attention-map-9.png" alt="Description of image 9">
+        </div>
+        <div class="item item-image10">
+          <img src="./static/images/attention-maps/attention-map-10.png" alt="Description of image 10">
+        </div>
+        <!-- Add more image items as needed -->
+      </div>
+      <h2> <em>Images with their corresponding detections and attention maps illustrating areas the model focused on to detect the pavement distresses.  The grad-cam visualization provides insights into the model's interpretability, allowing us to verify whether the model is accurately identifying the distress locations or being misled by irrelevant features</em></h2>
+    </div>
+  </div>
+</section>
+
+
 <!-- <section class="hero teaser">
   <div class="container is-max-desktop">
     <div class="hero-body has-text-centered">
